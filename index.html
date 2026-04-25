@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequential Coursera Learning Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .completed-text {
+            text-decoration: line-through;
+            color: #9ca3af; /* text-gray-400 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans p-4 md:p-8">
+    <div class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-xl shadow-sm border border-gray-200">
+        <h1 class="text-3xl font-bold mb-4 text-gray-900">Comprehensive Data Science & AI Curriculum Plan</h1>
+        
+        <div class="mb-8 p-4 bg-blue-50 border border-blue-100 rounded-lg flex items-center justify-between">
+            <div>
+                <h2 class="font-semibold text-blue-900">Coursera Dashboard</h2>
+                <p class="text-sm text-blue-700">Access your active enrollments directly on Coursera.</p>
+            </div>
+            <a href="https://www.coursera.org/my-learning?myLearningTab=IN_PROGRESS&page=1" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+                Open "In Progress" Page ↗
+            </a>
+        </div>
+
+        <p class="text-gray-600 mb-8 border-l-4 border-gray-300 pl-4">This curriculum is structured to progress linearly from foundational data concepts to advanced generative AI. Courses are grouped logically by subject matter and prerequisite necessity. Your progress is automatically saved to your browser.</p>
+
+        <!-- Phase 1 -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold mb-1 text-gray-800 border-b pb-2">Phase 1: Data Analytics Foundations</h2>
+            <p class="text-sm text-gray-500 mb-4 italic">This phase establishes basic data literacy, spreadsheet fundamentals, and introductory SQL/visualization before writing complex code.</p>
+            <ul class="space-y-3 pl-2">
+                <li class="flex items-start">
+                    <input type="checkbox" id="p1-c1" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                    <label for="p1-c1" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Foundations: Data, Data, Everywhere</span>
+                        <span class="ml-2 text-xs font-semibold bg-green-100 text-green-800 px-2 py-0.5 rounded">Complete</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google Data Analytics</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p1-c2" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                    <label for="p1-c2" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Ask Questions to Make Data-Driven Decisions</span>
+                        <span class="ml-2 text-xs font-semibold bg-green-100 text-green-800 px-2 py-0.5 rounded">Complete</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google Data Analytics</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p1-c3" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p1-c3" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Prepare Data for Exploration</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google Data Analytics</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p1-c4" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p1-c4" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">4. Process Data from Dirty to Clean</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google Data Analytics</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p1-c5" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p1-c5" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">5. Analyze Data to Answer Questions</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google Data Analytics</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p1-c6" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p1-c6" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">6. Share Data Through the Art of Visualization</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google Data Analytics</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold mb-1 text-gray-800 border-b pb-2">Phase 2: Core Programming & Version Control</h2>
+            <p class="text-sm text-gray-500 mb-4 italic">This phase introduces the primary languages (Python and R) and fundamental tools like Git. Note that R programming is front-loaded here to align with the JHU Data Science track.</p>
+            <ul class="space-y-3 pl-2">
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c1" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c1" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Crash Course on Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google IT Automation with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c2" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c2" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Using Python to Interact with the Operating System</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google IT Automation with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c3" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c3" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Introduction to Git and GitHub</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google IT Automation with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c4" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                    <label for="p2-c4" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. The Data Scientist’s Toolbox</span>
+                        <span class="ml-2 text-xs font-semibold bg-green-100 text-green-800 px-2 py-0.5 rounded">Complete</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science (R-based)</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c5" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c5" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. R Programming</span>
+                        <span class="ml-2 text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">26% complete</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science (R-based)</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c6" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c6" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Getting and Cleaning Data</span>
+                        <span class="ml-2 text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">21% complete</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science (R-based)</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c7" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c7" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">4. Exploratory Data Analysis</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science (R-based)</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c8" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c8" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">5. Reproducible Research</span>
+                        <span class="ml-2 text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">55% complete</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science (R-based)</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c9" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c9" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">7. Data Analysis with R Programming</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google Data Analytics</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c10" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c10" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">8. Google Data Analytics Capstone: Complete a Case Study</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google Data Analytics</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p2-c11" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p2-c11" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">Manipulate Text Like a Pro with stringr</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Microsoft</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold mb-1 text-gray-800 border-b pb-2">Phase 3: Applied Python for Data Science & Statistics</h2>
+            <p class="text-sm text-gray-500 mb-4 italic">Transitioning fully to Python for data manipulation (pandas, matplotlib) and applying inferential statistics/regression.</p>
+            <ul class="space-y-3 pl-2">
+                <li class="flex items-start">
+                    <input type="checkbox" id="p3-c1" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p3-c1" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Python for Data Science, AI & Development</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p3-c2" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p3-c2" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">4. Python Project for Data Engineering</span>
+                        <span class="ml-2 text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">3% complete</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p3-c3" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p3-c3" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Introduction to Data Science in Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Applied Data Science with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p3-c4" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p3-c4" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Applied Plotting, Charting & Data Representation in Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Applied Data Science with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p3-c5" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p3-c5" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Understanding and Visualizing Data with Python</span>
+                        <span class="ml-2 text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">7% complete</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Statistics with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p3-c6" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p3-c6" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Inferential Statistical Analysis with Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Statistics with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p3-c7" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p3-c7" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Fitting Statistical Models to Data with Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Statistics with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p3-c8" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p3-c8" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">6. Statistical Inference</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p3-c9" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p3-c9" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">7. Regression Models</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold mb-1 text-gray-800 border-b pb-2">Phase 4: Mathematics for Machine Learning</h2>
+            <p class="text-sm text-gray-500 mb-4 italic">Completing all required mathematical theory (Calculus, Linear Algebra, PCA) immediately prior to algorithmic implementation.</p>
+            <ul class="space-y-3 pl-2">
+                <li class="flex items-start">
+                    <input type="checkbox" id="p4-c1" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p4-c1" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Algebra and Differential Calculus for Data Science</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Expressway to Data Science: Essential Math</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p4-c2" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p4-c2" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Essential Linear Algebra for Data Science</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Expressway to Data Science: Essential Math</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p4-c3" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p4-c3" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Integral Calculus and Numerical Analysis for Data Science</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Expressway to Data Science: Essential Math</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p4-c4" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p4-c4" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Mathematics for Machine Learning: Linear Algebra</span>
+                        <span class="ml-2 text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">12% complete</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Mathematics for Machine Learning</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p4-c5" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p4-c5" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Mathematics for Machine Learning: Multivariate Calculus</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Mathematics for Machine Learning</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p4-c6" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p4-c6" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Mathematics for Machine Learning: PCA</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Mathematics for Machine Learning</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Phase 5 -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold mb-1 text-gray-800 border-b pb-2">Phase 5: Data Engineering, Systems & Architecture</h2>
+            <p class="text-sm text-gray-500 mb-4 italic">Building the infrastructure knowledge (SQL, Linux, Pipelines, Warehousing) required to deploy and manage data at scale.</p>
+            <ul class="space-y-3 pl-2">
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c1" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c1" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Introduction to Data Engineering</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c2" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c2" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Introduction to Relational Databases (RDBMS)</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c3" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c3" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">5. Databases and SQL for Data Science with Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c4" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c4" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">6. Hands-on Introduction to Linux Commands and Shell Scripting</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c5" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c5" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">7. ETL and Data Pipelines with Shell, Airflow and Kafka</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c6" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c6" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">8. Data Warehouse Fundamentals</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c7" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c7" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">9. Relational Database Administration (DBA)</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c8" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c8" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">10. Relational Database Administration Capstone Project</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c9" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c9" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">11. Generative AI: Elevate your Data Engineering Career</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM Relational Database Administrator with GenAI</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c10" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c10" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">4. Troubleshooting and Debugging Techniques</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google IT Automation with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c11" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c11" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">5. Configuration Management and the Cloud</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google IT Automation with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p5-c12" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p5-c12" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">6. Automating Real-World Tasks with Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google IT Automation with Python</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Phase 6 -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold mb-1 text-gray-800 border-b pb-2">Phase 6: Machine Learning Foundations & Data Mining</h2>
+            <p class="text-sm text-gray-500 mb-4 italic">Core classical machine learning (Supervised/Unsupervised), pattern discovery, and clustering.</p>
+            <ul class="space-y-3 pl-2">
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c1" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c1" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Introduction to Machine Learning: Supervised Learning</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Machine Learning: Theory and Hands-on Practice with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c2" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c2" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Introduction to Machine Learning: Unsupervised Learning</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Machine Learning: Theory and Hands-on Practice with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c3" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c3" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Applied Machine Learning in Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Applied Data Science with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c4" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c4" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Machine Learning with Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c5" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c5" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">1. Data Visualization</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Mining</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c6" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c6" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">4. Pattern Discovery in Data Mining</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Mining</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c7" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c7" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">5. Cluster Analysis in Data Mining</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Mining</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c8" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c8" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">6. Data Mining Project</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Mining</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c9" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c9" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">8. Practical Machine Learning</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c10" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c10" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">9. Developing Data Products</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p6-c11" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p6-c11" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">10. Data Science Capstone</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Science</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Phase 7 -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold mb-1 text-gray-800 border-b pb-2">Phase 7: NLP, Text Mining & Social Media Analytics</h2>
+            <p class="text-sm text-gray-500 mb-4 italic">Specialized coursework dealing with unstructured text, networks, and search retrieval; serves as a bridge to deep learning NLP models.</p>
+            <ul class="space-y-3 pl-2">
+                <li class="flex items-start">
+                    <input type="checkbox" id="p7-c1" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p7-c1" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">4. Applied Text Mining in Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Applied Data Science with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p7-c2" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p7-c2" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">5. Applied Social Network Analysis in Python</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Applied Data Science with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p7-c3" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p7-c3" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Text Retrieval and Search Engines</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Mining</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p7-c4" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p7-c4" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Text Mining and Analytics</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Data Mining</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p7-c5" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p7-c5" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">Social Media Data Analytics</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— University of Washington</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Phase 8 -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold mb-1 text-gray-800 border-b pb-2">Phase 8: Deep Learning, AI Engineering & Generative AI</h2>
+            <p class="text-sm text-gray-500 mb-4 italic">Advanced neural networks, transformers, LLM fine-tuning, and application architecture.</p>
+            <ul class="space-y-3 pl-2">
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c1" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c1" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Introduction to Deep Learning</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Machine Learning: Theory and Hands-on Practice with Python</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c2" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c2" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">2. Introduction to Deep Learning & Neural Networks with Keras</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c3" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c3" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">3. Deep Learning with Keras and Tensorflow</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c4" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c4" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">4. Introduction to Neural Networks and PyTorch</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c5" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c5" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">5. Deep Learning with PyTorch</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c6" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c6" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">6. AI Capstone Project with Deep Learning</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c7" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c7" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">7. Generative AI and LLMs: Architecture and Data Preparation</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c8" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c8" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">8. Gen AI Foundational Models for NLP & Language Understanding</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c9" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c9" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">9. Generative AI Language Modeling with Transformers</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c10" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c10" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">10. Generative AI Engineering and Fine-Tuning Transformers</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c11" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c11" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">11. Generative AI Advance Fine-Tuning for LLMs</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c12" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c12" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">12. Fundamentals of AI Agents Using RAG and LangChain</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="p8-c13" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p8-c13" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">13. Project: Generative AI Applications with RAG and LangChain</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— IBM AI Engineering</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Wrap-up -->
+        <div class="mb-4">
+            <h2 class="text-2xl font-bold mb-1 text-gray-800 border-b pb-2">Wrap-up</h2>
+            <ul class="space-y-3 pl-2 mt-4">
+                <li class="flex items-start">
+                    <input type="checkbox" id="p9-c1" class="mt-1 mr-3 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="p9-c1" class="course-label cursor-pointer select-none">
+                        <span class="font-medium">7. Accelerate Your Job Search with AI</span>
+                        <span class="block text-sm text-gray-500 mt-0.5">— Google IT Automation with Python</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        // Update the visual styling of labels when checkboxes change
+        function updateLabelStyle(checkbox) {
+            const label = document.querySelector(`label[for="${checkbox.id}"]`);
+            if (label) {
+                // Clear any existing badges (hardcoded completes or partial percentages)
+                const existingBadges = label.querySelectorAll('.bg-yellow-100, .bg-green-100, .status-badge');
+                existingBadges.forEach(badge => badge.remove());
+
+                if (checkbox.checked) {
+                    label.classList.add('completed-text');
+                    
+                    // Dynamically add the Complete badge
+                    const titleSpan = label.querySelector('.font-medium');
+                    if (titleSpan) {
+                        const badge = document.createElement('span');
+                        badge.className = 'status-badge ml-2 text-xs font-semibold bg-green-100 text-green-800 px-2 py-0.5 rounded';
+                        badge.textContent = 'Complete';
+                        titleSpan.insertAdjacentElement('afterend', badge);
+                    }
+                } else {
+                    label.classList.remove('completed-text');
+                }
+            }
+        }
+
+        // Initialize and bind localStorage to all checkboxes
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            // Load saved state (overriding default HTML checked state if saved data exists)
+            const savedState = localStorage.getItem(checkbox.id);
+            if (savedState !== null) {
+                checkbox.checked = savedState === 'true';
+            } else {
+                // If there's no saved state but HTML has 'checked', save it to initialize
+                if(checkbox.checked) {
+                    localStorage.setItem(checkbox.id, 'true');
+                }
+            }
+            
+            // Apply initial styles
+            updateLabelStyle(checkbox);
+
+            // Listen for changes
+            checkbox.addEventListener('change', (e) => {
+                localStorage.setItem(e.target.id, e.target.checked);
+                updateLabelStyle(e.target);
+            });
+        });
+    </script>
+</body>
+</html>
